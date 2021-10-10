@@ -32,7 +32,7 @@ public class BiggestInRandom {
         num2 %= 10;
         int num3 = rnd % 10;
 
-        int max = 0;
+        int max;
 
         if(num1 >= num2  && num1 >= num3){
             max = num1;
@@ -43,4 +43,5 @@ public class BiggestInRandom {
 
         return "В числе " + rnd + " наибольшая цифра " + max + ".";
     }
+
 }
