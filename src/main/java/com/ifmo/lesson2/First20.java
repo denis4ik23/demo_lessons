@@ -7,6 +7,7 @@ public class First20 {
      */
     public static void main(String[] args) {
         // TODO implement
+
         int result = 1;
         for (int i = 1; i <= 20; i++) {
             result = result*2;
