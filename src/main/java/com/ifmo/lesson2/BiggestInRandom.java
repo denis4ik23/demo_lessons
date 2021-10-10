@@ -32,7 +32,7 @@ public class BiggestInRandom {
         num2 %= 10;
         int num3 = rnd % 10;
 
-        int max;
+        int max = 0;
 
         if(num1 >= num2  && num1 >= num3){
             max = num1;
