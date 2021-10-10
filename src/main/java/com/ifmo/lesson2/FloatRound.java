@@ -15,8 +15,8 @@ public class FloatRound {
 
     public static float round(float n) {
         // TODO implement
-        int i = (int)(n + 0.5);
-
+        //int i = (int)(n + 0.5f);
+        int i = (int)Math.round(n);
         return i;
     }
 }
