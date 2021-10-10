@@ -23,7 +23,6 @@ public class Factorial {
         for (int i = 1; i <= n; i++) {
             result = result * i;
         }
-
         return result;
     }
 }
