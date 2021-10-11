@@ -8,6 +8,7 @@ public class First55 {
         // TODO implement
         for (int i = 1, j = 1; i <= 55; i++, j+= 2) {
             System.out.println(j);
+
         }
     }
 }
