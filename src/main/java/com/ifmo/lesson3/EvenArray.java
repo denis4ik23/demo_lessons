@@ -25,8 +25,13 @@ public class EvenArray {
         // TODO implement
 
         //int[] even = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-
-        int[] even = new int[10];
+        int len = 0;
+        for (int i = 2; i <= 20 ; i++) {
+            if(i % 2 == 0){
+                len++;
+            }
+        }
+        int[] even = new int[len];
         for (int i = 0; i < even.length; i++) {
             even[i] = i * 2 + 2;
         }
