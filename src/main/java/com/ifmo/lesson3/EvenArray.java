@@ -11,13 +11,13 @@ public class EvenArray {
         int[] evenArray = evenArray();
 
         // TODO implement
-        for (int i = 0; i < evenArray.length; i++) {
-            System.out.print(evenArray[i] + " ");
+        for (int j : evenArray) {
+            System.out.print(j + " ");
         }
         System.out.println();
 
-        for (int i = 0; i < evenArray.length; i++) {
-            System.out.println(evenArray[i]);
+        for (int j : evenArray) {
+            System.out.println(j);
         }
     }
 
