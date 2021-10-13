@@ -9,7 +9,6 @@ public class EvenArray {
      */
     public static void main(String[] args) {
         int[] evenArray = evenArray();
-
         // TODO implement
         for (int j : evenArray) {
             System.out.print(j + " ");
