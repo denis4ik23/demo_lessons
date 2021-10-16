@@ -14,13 +14,13 @@ public class TwoArrays {
         int[] randomNumbers2 = randomNumbers();
 
         // TODO implement
-        for (int i = 0; i < randomNumbers1.length; i++) {
-            System.out.print(randomNumbers1[i]);
+        for (int j : randomNumbers1) {
+            System.out.print(j);
         }
         System.out.println();
 
-        for (int i = 0; i < randomNumbers2.length; i++) {
-            System.out.print(randomNumbers2[i]);
+        for (int j : randomNumbers2) {
+            System.out.print(j);
         }
         System.out.println();
 
