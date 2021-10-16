@@ -1,5 +1,7 @@
 package com.ifmo.lesson3;
 
+import java.util.Arrays;
+
 public class Fibonacci20 {
     /*
     Создайте массив из 20-ти первых чисел Фибоначчи и выведите его на экран. Напоминаем,
@@ -10,7 +12,7 @@ public class Fibonacci20 {
         int[] fibonacciNumbers = fibonacciNumbers();
 
         // TODO implement
-        System.out.println(fibonacciNumbers);
+        System.out.println(Arrays.toString(fibonacciNumbers));
     }
 
     public static int[] fibonacciNumbers() {
