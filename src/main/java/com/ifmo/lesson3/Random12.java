@@ -32,7 +32,7 @@ public class Random12 {
         return rn;
     }
 
-    public static int max(int[] randomNumbers) {// неправильно
+    public static int max(int[] randomNumbers) {
         // TODO implement
         int max = 0;
         for (int i = 0; i < randomNumbers.length; i++) {
