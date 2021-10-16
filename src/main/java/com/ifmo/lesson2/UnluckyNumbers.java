@@ -16,23 +16,12 @@ public class UnluckyNumbers {
     public static int unluckyNumbersCount() {
         // TODO implement
         int cnt = 0;
-        int max = 99999;
-        for (int j = 0; j < 5; j++) {
+        for (int i = 1; i <= 99999; i++) {
+            String s = String.valueOf(i);
+            if(s.contains("4") || s.contains("13")){
+                cnt++;
+            }
 
-            if(j == 2){
-                max = 9999;
-            }
-            if(j == 3){
-                max = 999;
-            }
-            if(j == 4){
-                max = 99;
-            }
-            for (int i = 1; i < max; i++) {
-                if(i % 10 == 4 || i % 100 == 13){
-                    cnt++;
-                }
-            }
         }
 
         return cnt;
