@@ -30,7 +30,7 @@ public class Random8 {
         Random random = new Random();
         int[] rn = new int[8];
         for (int i = 0; i < rn.length; i++) {
-            rn[i] = random.nextInt(1, 10);
+            rn[i] = random.nextInt(9) + 1;
         }
 
         return rn;
