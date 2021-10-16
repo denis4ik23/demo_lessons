@@ -25,7 +25,7 @@ public class Random4 {
         Random random = new Random();
         int[] ran = new int[4];
         for (int i = 0; i < ran.length; i++) {
-            ran[i] = random.nextInt(89 + 10);
+            ran[i] = random.nextInt(89) + 10;
         }
 
         return ran;
