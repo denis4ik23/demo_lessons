@@ -32,7 +32,7 @@ public class TwoArrays {
             System.out.println("Среднее арифметическое элементов массива randomNumbers1 больше чем у массива randomNumbers2");
         } else if (average2 > average1){
             System.out.println("Среднее арифметическое элементов массива randomNumbers2 больше чем у массива randomNumbers1");
-        } else if (average1 == average2){
+        } else {
             System.out.println("Среднее арифметическое элементов массива randomNumbers1 и randomNumbers2 равны");
         }
     }
