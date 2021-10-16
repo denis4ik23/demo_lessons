@@ -33,8 +33,8 @@ public class Random4 {
 
     public static boolean isIncreasingSequence(int[] randomNumbers) {//не правильно
         // TODO implement
-        for (int i = 1; i < randomNumbers.length; i++) {
-            if(randomNumbers[i] <= randomNumbers[i - 1]){
+        for (int i = 0; i < randomNumbers.length; i++) {
+            if(randomNumbers[i+1] <= randomNumbers[i]){
         return false;
             }
         }
