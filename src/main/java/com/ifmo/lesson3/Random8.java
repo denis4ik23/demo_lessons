@@ -38,8 +38,8 @@ public class Random8 {
 
     public static int[] replaceWithZeros(int[] randomNumbers) {
         // TODO implement
-        for(int i = 1; i < randomNumbers.length; i++){
-            if(randomNumbers[i] % 2 != 0){
+        for(int i = 0; i < randomNumbers.length; i++){
+            if(i % 2 != 0){
                 randomNumbers[i] = 0;
             }
         }
