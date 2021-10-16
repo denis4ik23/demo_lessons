@@ -54,6 +54,6 @@ public class TwoArrays {
         for (int randomNumber : randomNumbers) {
             sum = sum + randomNumber;
         }
-        return sum;
+        return sum / 5;
     }
 }
