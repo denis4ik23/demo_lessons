@@ -12,16 +12,16 @@ public class Random8 {
         int[] randomNumbers = randomNumbers();
 
         // TODO implement
-        for (int i = 0; i < randomNumbers.length; i++) {
-            System.out.print(randomNumbers[i]);
+        for (int randomNumber : randomNumbers) {
+            System.out.print(randomNumber);
         }
         System.out.println();
 
         int[] replacedWithZeros = replaceWithZeros(randomNumbers);
 
         // TODO implement
-        for (int i = 0; i < replacedWithZeros.length; i++) {
-            System.out.print(replacedWithZeros[i]);
+        for (int replacedWithZero : replacedWithZeros) {
+            System.out.print(replacedWithZero);
         }
     }
 
