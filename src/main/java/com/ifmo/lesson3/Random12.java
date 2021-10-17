@@ -26,7 +26,7 @@ public class Random12 {
         Random random = new Random();
         int[] rn = new int[12];
         for (int i = 0; i < rn.length; i++) {
-            rn[i] = random.nextInt(30) - 15;
+            rn[i] = random.nextInt(31) - 15;
         }
 
         return rn;
