@@ -42,7 +42,7 @@ public class TwoArrays {
         Random random = new Random();
         int[] rn = new int[5];
         for (int i = 0; i < 5; i++) {
-            rn[i] = random.nextInt(5);
+            rn[i] = random.nextInt(6);
         }
 
         return rn;
