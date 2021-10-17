@@ -50,6 +50,7 @@ public class Random12 {
         for (int i = randomNumbers.length - 1; i >= 0; i--) {
             if (randomNumbers[i] == max) {
                 max = i;
+                break;
             }
         }return max;
     }
