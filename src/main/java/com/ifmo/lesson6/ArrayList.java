@@ -1,6 +1,7 @@
 package com.ifmo.lesson6;
 
 
+
 import java.util.Iterator;
 
 /**
@@ -60,7 +61,11 @@ public class ArrayList implements List {
     @Override
     public Object get(int i) {
         // TODO implement.
+        if (i < size) {
+
         return values[i];
+        }
+        return null;
     }
 
     /** {@inheritDoc} */

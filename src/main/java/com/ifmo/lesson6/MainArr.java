@@ -15,7 +15,7 @@ public class MainArr {
             list.add(8);
             list.add(9);
             list.add(10);
-            //list.add(11);
+            list.add(11);
 
             System.out.println();
 
@@ -35,7 +35,7 @@ public class MainArr {
 
         System.out.println();
         System.out.println();
-        System.out.println(list.get(5));
+        System.out.println(list.get(21));
 
     }
 
