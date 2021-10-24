@@ -90,7 +90,13 @@ public class ArrayList implements List {
 
             @Override
             public boolean hasNext() {
-                return currentIndex <= size && values[currentIndex] != null;
+                if(values == null){
+                    return false;
+                }
+                if (size <= currentIndex){
+                    return false;
+                }
+                return values[currentIndex] != null;
             }
 
             @Override
