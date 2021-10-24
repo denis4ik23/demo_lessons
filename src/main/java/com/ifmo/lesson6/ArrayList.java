@@ -73,11 +73,11 @@ public class ArrayList implements List {
     public Object remove(int i) {
         // TODO implement.
             values[i] = i;
-            Object del = values[i];
+            //Object del = values[i];
                 System.arraycopy(values, i+1, values, i, size - i -1);
                 size--;
                 values[size]=null;
-        return "remove " + i;
+        return values[i];
     }
 
     /** {@inheritDoc} */
