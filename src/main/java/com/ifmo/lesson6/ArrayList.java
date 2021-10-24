@@ -63,7 +63,7 @@ public class ArrayList implements List {
         // TODO implement.
         if (i < size) {
 
-        return values[i - 1];
+        return values[i];
         }
         return null;
     }
@@ -77,7 +77,7 @@ public class ArrayList implements List {
                 System.arraycopy(values, i+1, values, i, size - i -1);
                 size--;
                 values[size]=null;
-        return values[i];
+        return values[i - 1];
     }
 
     /** {@inheritDoc} */
