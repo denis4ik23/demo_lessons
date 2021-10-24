@@ -105,8 +105,8 @@ public class ArrayList implements List {
 
             @Override
             public Object next() {
-                currentIndex++;
-                return values[currentIndex - 1];
+                //currentIndex++;
+                return values[currentIndex++];//currentIndex - 1
             }
 
         };
