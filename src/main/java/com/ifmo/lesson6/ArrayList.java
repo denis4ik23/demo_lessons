@@ -63,7 +63,7 @@ public class ArrayList implements List {
         // TODO implement.
         if (i < size) {
 
-        return values[i];
+        return values[i - 1];
         }
         return null;
     }
