@@ -1,5 +1,7 @@
 package com.ifmo.lesson6;
 
+import java.util.Iterator;
+
 public class MainArr {
     public static void main(String[] args) {
 
@@ -25,7 +27,7 @@ public class MainArr {
 
         System.out.println();
 
-        list.remove(8);
+        list.remove(0);
 
         System.out.println();
 
@@ -35,7 +37,14 @@ public class MainArr {
 
         System.out.println();
         System.out.println();
-        System.out.println(list.get(21));
+        System.out.println(list.get(7));
+        System.out.println();
+
+        final Iterator iterator = list.iterator();
+        while (iterator.hasNext()) {
+            Object next = iterator.next();
+            System.out.print(next + " ");
+        }
 
     }
 
