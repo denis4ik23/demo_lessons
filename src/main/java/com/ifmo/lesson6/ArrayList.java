@@ -72,7 +72,7 @@ public class ArrayList implements List {
     @Override
     public Object remove(int i) {
         // TODO implement.
-        if (i >= size){
+        if (i >= size ){
             return null;
         }
             values[i] = i;
@@ -92,7 +92,12 @@ public class ArrayList implements List {
 
             @Override
             public boolean hasNext() {
-                return currentIndex < size && values[currentIndex] != null;
+                //return currentIndex < size && values[currentIndex] != null;
+                if(currentIndex >= size){
+                    return false;
+                } else {
+                    return true;
+                }
             }
 
             @Override
