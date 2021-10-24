@@ -77,7 +77,7 @@ public class ArrayList implements List {
                 System.arraycopy(values, i+1, values, i, size - i -1);
                 size--;
                 values[size]=null;
-        return del;
+        return "remove " + i;
     }
 
     /** {@inheritDoc} */
