@@ -62,7 +62,7 @@ public class ArrayList implements List {
     public Object get(int i) {
         // TODO implement.
 
-        if (i > 0 && i <= size) {
+        if (i >= 0 && i < size) {
 
         return values[i];
         }
