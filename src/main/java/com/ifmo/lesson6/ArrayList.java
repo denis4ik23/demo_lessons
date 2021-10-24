@@ -79,7 +79,7 @@ public class ArrayList implements List {
             Object del = i;
             values[i] = i;
             //size--;
-            System.arraycopy(values, i + 1, values, i, size - i );
+            System.arraycopy(values, i + 1, values, i, size - i - 1);
             size--;
             values[size] = null;
             return del;//values[i]
