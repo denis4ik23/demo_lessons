@@ -64,8 +64,9 @@ public class ArrayList implements List {
 
         if (i >= size) {
             return null;
+        } else {
+            return values[i];
         }
-        return values[i];
     }
 
     /** {@inheritDoc} */
@@ -74,31 +75,32 @@ public class ArrayList implements List {
         // TODO implement.
         if (i >= size ){
             return null;
-        }
+        } else {
             values[i] = i;
-                size--;
-                System.arraycopy(values, i+1, values, i, size - i -1);
-                //size--;
-                values[size]=null;
-        return values[i];
+            //size--;
+            System.arraycopy(values, i + 1, values, i, size - i - 1);
+            size--;
+            values[size] = null;
+            return values[i];
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Iterator iterator() {
         // TODO implement.
-         return new Iterator() {//Iterator it =
+        Iterator it = new Iterator() {
 
             private int currentIndex = 0;
 
             @Override
             public boolean hasNext() {
-                //return currentIndex < size && values[currentIndex] != null;
-                if(currentIndex >= size){
+                return currentIndex < size && values[currentIndex] != null;
+               /* if(currentIndex >= size){
                     return false;
                 } else {
                     return true;
-                }
+                }*/
             }
 
             @Override
@@ -108,7 +110,7 @@ public class ArrayList implements List {
             }
 
         };
-        //return it;
+        return it;
     }
 
 }

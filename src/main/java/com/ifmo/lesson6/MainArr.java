@@ -27,7 +27,7 @@ public class MainArr {
 
         System.out.println();
 
-        list.remove(22);
+        list.remove(9);
 
         System.out.println();
 
