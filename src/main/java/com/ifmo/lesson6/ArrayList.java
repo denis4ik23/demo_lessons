@@ -98,10 +98,10 @@ public class ArrayList implements List {
                 return values[currentIndex++];
             }
 
-            @Override
+          /*  @Override
             public void remove() {
                 throw new UnsupportedOperationException();
-            }
+            }*/
         };
         return it;
     }
