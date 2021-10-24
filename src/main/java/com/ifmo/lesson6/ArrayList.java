@@ -62,17 +62,19 @@ public class ArrayList implements List {
     public Object get(int i) {
         // TODO implement.
 
-        if (i >= 0 && i < size) {
-
-        return values[i];
+        if (i >= size) {
+            return null;
         }
-        return null;
+        return values[i];
     }
 
     /** {@inheritDoc} */
     @Override
     public Object remove(int i) {
         // TODO implement.
+        if (i >= size){
+            return null;
+        }
             values[i] = i;
                 System.arraycopy(values, i+1, values, i, size - i -1);
                 size--;
@@ -90,18 +92,15 @@ public class ArrayList implements List {
 
             @Override
             public boolean hasNext() {
-                return currentIndex <= size - 1 && values[currentIndex] != null;
+                return currentIndex < size && values[currentIndex] != null;
             }
 
             @Override
             public Object next() {
-                return values[currentIndex++];
+                currentIndex++;
+                return values[currentIndex - 1];
             }
 
-          /*  @Override
-            public void remove() {
-                throw new UnsupportedOperationException();
-            }*/
         };
         return it;
     }
