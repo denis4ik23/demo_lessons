@@ -76,8 +76,9 @@ public class ArrayList implements List {
             return null;
         }
             values[i] = i;
-                System.arraycopy(values, i+1, values, i, size - i -1);
                 size--;
+                System.arraycopy(values, i+1, values, i, size - i -1);
+                //size--;
                 values[size]=null;
         return values[i];
     }
@@ -86,7 +87,7 @@ public class ArrayList implements List {
     @Override
     public Iterator iterator() {
         // TODO implement.
-        Iterator it = new Iterator() {
+         return new Iterator() {//Iterator it =
 
             private int currentIndex = 0;
 
@@ -107,7 +108,7 @@ public class ArrayList implements List {
             }
 
         };
-        return it;
+        //return it;
     }
 
 }
