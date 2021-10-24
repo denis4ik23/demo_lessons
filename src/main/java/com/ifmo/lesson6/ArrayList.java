@@ -65,7 +65,7 @@ public class ArrayList implements List {
 
         return values[i];
         }
-        return null;
+        return "i >= size" + null;
     }
 
     /** {@inheritDoc} */
