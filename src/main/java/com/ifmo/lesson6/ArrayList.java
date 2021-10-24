@@ -85,7 +85,7 @@ public class ArrayList implements List {
 
             @Override
             public boolean hasNext() {
-                return currentIndex < size && values[currentIndex] != null;
+                return currentIndex < values.length && values[currentIndex] != null;
             }
 
             @Override
@@ -101,6 +101,4 @@ public class ArrayList implements List {
         return it;
     }
 
-        //return null;
-    //}
 }
