@@ -77,12 +77,12 @@ public class ArrayList implements List {
         if (i >= size ){
             return null;
         } else {
-            Object del = i;
-            values[i] = i;
+            Object del = values[i];
+//            values[i] = i;
             //size--;
             System.arraycopy(values, i + 1, values, i, size - i - 1);
             size--;
-            values[size] = null;
+//            values[size] = null;
             return del;//values[i]
         }
     }
