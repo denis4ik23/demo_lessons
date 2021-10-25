@@ -45,7 +45,5 @@ public class MainArr {
             Object next = iterator.next();
             System.out.print(next + " ");
         }
-
     }
-
 }
