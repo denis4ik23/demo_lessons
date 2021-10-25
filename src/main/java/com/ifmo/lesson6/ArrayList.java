@@ -59,8 +59,9 @@ public class ArrayList implements List {
 
     /** {@inheritDoc} */
     @Override
+    // TODO implement.
+
     public Object get(int i) {
-        // TODO implement.
 
         if (i >= size) {
             return null;
