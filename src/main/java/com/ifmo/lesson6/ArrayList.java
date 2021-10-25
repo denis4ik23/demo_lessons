@@ -74,15 +74,15 @@ public class ArrayList implements List {
     @Override
     public Object remove(int i) {
         // TODO implement.
-        Object[] tmp = new Object[size];
-        System.arraycopy(values, 0, tmp, 0, i);
+        //Object[] tmp = new Object[size];
+       // System.arraycopy(values, 0, tmp, 0, i);
         if (i >= size ){
             return null;
         } else {
             Object del = values[i];
 //            values[i] = i;
             //size--;
-            System.arraycopy(values, i + 1, tmp, i, size - i - 1);
+            System.arraycopy(values, i + 1, values, i, size - i - 1);//tmp
             size--;
 //            values[size] = null;
             return del;//values[i]
