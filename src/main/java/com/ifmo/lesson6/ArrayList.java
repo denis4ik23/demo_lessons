@@ -110,7 +110,11 @@ public class ArrayList implements List {
             @Override
             public Object next() {
                 //currentIndex++;
-                return values[currentIndex++];//currentIndex - 1
+                if (hasNext()) {
+                    return values[currentIndex++];//currentIndex - 1
+                }
+
+                return null;
             }
 
         };
