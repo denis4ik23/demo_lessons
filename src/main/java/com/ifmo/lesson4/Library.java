@@ -81,9 +81,11 @@ public class Library {
         for (int i = 0; i < shelves.length; i++) {
             Shelf shelf = shelves[i];
             if(shelf.getBook().equals(book)){
-                int count = shelf.getQuantity() - Math.min(shelf.getQuantity(), quantity);
+                int count = Math.min(shelf.getQuantity(), quantity);//shelf.getQuantity() -
                 if(count <= 0){
                     shelves[i] = null;
+                    System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i - 1);
+
                 }
             }
         }
