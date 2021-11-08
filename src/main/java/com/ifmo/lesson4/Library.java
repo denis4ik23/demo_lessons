@@ -88,8 +88,9 @@ public class Library {
                     System.arraycopy(shelf, i + 1, shelf, i, shelves.length - i - 1);
                     System.out.println(shelf);
                 }
+                return count;
             }
-            quantity--;
+
         }
 
         return 0;
