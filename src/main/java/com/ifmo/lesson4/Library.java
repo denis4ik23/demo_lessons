@@ -89,6 +89,7 @@ public class Library {
                     System.out.println(shelf);
                 }
             }
+            quantity--;
         }
 
         return 0;
