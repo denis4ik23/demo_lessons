@@ -80,14 +80,14 @@ public class Library {
         // TODO implement
         for (int i = 0; i < shelves.length; i++) {
             Shelf shelf = shelves[i];
-            System.out.println(shelf);
             if(shelf.getBook().equals(book)){
-                int count = Math.min(shelf.getQuantity(), quantity);//shelf.getQuantity() -
-                System.arraycopy(shelf, i + 1, shelf, i, shelves.length - i - 1);
+                int count = Math.min(shelf.getQuantity(), quantity);
+                shelf.setQuantity(shelf.getQuantity() - count);
+
                 if(count <= 0){
                     shelves[i] = null;
+                    System.arraycopy(shelf, i + 1, shelf, i, shelves.length - i - 1);
 
-                    System.out.println(shelf);
                 }
                 return count;
             }
