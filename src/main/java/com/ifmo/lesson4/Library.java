@@ -83,17 +83,13 @@ public class Library {
             if(shelf.getBook().equals(book)){
                 int count = Math.min(shelf.getQuantity(), quantity);
                 shelf.setQuantity(shelf.getQuantity() - count);
-
                 if(count <= 0){
                     shelves[i] = null;
                     System.arraycopy(shelf, i + 1, shelf, i, shelves.length - i - 1);
-
                 }
                 return count;
             }
-
         }
-
         return 0;
     }
 
