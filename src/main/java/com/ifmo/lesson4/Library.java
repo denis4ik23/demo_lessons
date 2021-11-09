@@ -86,7 +86,7 @@ public class Library {
                 shelf.setQuantity(shelf.getQuantity() - count);
                 if(count <= 0){
                     shelves[i] = null;
-                    System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i );
+                    System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i - 1);
                 }
                 return count;
             }
