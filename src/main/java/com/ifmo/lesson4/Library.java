@@ -55,7 +55,7 @@ public class Library {
 
     public boolean put(Book book, int quantity) {
         // TODO implement
-        for (int i = 0; i < shelves.length; i++) {
+        for (int i = 0; i < size; i++) {
             Shelf shelf = shelves[i];
             if (size >= 0){
                 shelves[i] = new Shelf(book, quantity);
@@ -87,7 +87,7 @@ public class Library {
                 int count = Math.min(shelf.getQuantity(), quantity);
                 shelf.setQuantity(shelf.getQuantity() - count);
                 if(count <= 0){
-                    shelves[i] = null;
+                    //shelves[i] = null;
                     System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i - 1);
                     size--;
                 }
