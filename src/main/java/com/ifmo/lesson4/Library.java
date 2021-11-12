@@ -38,6 +38,7 @@ package com.ifmo.lesson4;
  */
 public class Library {
     private Shelf[] shelves;
+    private int size;
     public Library(int maxBookKinds) {
         // TODO implement
         // Возможно здесь следует сынициализировать массив.
@@ -56,8 +57,9 @@ public class Library {
         // TODO implement
         for (int i = 0; i < shelves.length; i++) {
             Shelf shelf = shelves[i];
-            if (shelf == null){
+            if (size >= 0){
                 shelves[i] = new Shelf(book, quantity);
+                size++;
                 return true;
             } else if(shelf.getBook().equals(book)){
                 shelf.setQuantity(shelf.getQuantity() + quantity);
@@ -79,7 +81,7 @@ public class Library {
      */
     public int take(Book book, int quantity) {
         // TODO implement
-        for (int i = 0; i < shelves.length; i++) {
+        for (int i = 0; i < size; i++) {
             Shelf shelf = shelves[i];
             if(shelf.getBook().equals(book)){
                 int count = Math.min(shelf.getQuantity(), quantity);
@@ -87,6 +89,7 @@ public class Library {
                 if(count <= 0){
                     shelves[i] = null;
                     System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i - 1);
+                    size--;
                 }
                 return count;
             }
