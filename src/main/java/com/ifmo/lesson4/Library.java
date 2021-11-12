@@ -55,10 +55,10 @@ public class Library {
 
     public boolean put(Book book, int quantity) {
         // TODO implement
-        size = shelves.length;
-        for (int i = 0; i < size; i++) {
+
+        for (int i = 0; i < shelves.length; i++) {
             Shelf shelf = shelves[i];
-            if (shelf == null){
+            if (i >= size){
                 shelves[i] = new Shelf(book, quantity);
                size++;
                 return true;
@@ -82,13 +82,13 @@ public class Library {
      */
     public int take(Book book, int quantity) {
         // TODO implement
-        for (int i = 0; i < shelves.length; i++) {
+        for (int i = 0; i < size; i++) {
             Shelf shelf = shelves[i];
             if(shelf.getBook().equals(book)){
                 int count = Math.min(shelf.getQuantity(), quantity);
                 shelf.setQuantity(shelf.getQuantity() - count);
                 if(count <= 0){
-                    shelves[i] = null;
+                   // shelves[i] = null;
                     System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i - 1);
                     size--;
                 }
